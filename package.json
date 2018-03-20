@@ -8,7 +8,7 @@
   "private": true,
   "scripts": {
     "build": "run-p build:server build:client",
-    "build:server": "babel src/server --out-dir build/server",
+    "build:server": "babel src/server --out-dir build --copy-files",
     "build:client": "webpack --mode development",
     "start": "node build/index.js"
   },
@@ -17,6 +17,8 @@
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.6.1",
     "koa": "^2.5.0",
+    "koa-pug": "^3.0.0-2",
+    "koa-static": "^4.0.2",
     "vue": "^2.5.16",
     "vue-loader": "^14.2.1",
     "webpack": "^4.1.1",
