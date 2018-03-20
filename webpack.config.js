@@ -19,5 +19,10 @@ module.exports = {
         exclude: /node_modules/
       }
     ]
+  },
+  resolve: {
+    alias: {
+      'vue$': 'vue/dist/vue.esm.js'
+    }
   }
 }
