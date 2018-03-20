@@ -7,12 +7,20 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "build": "babel src --out-dir build",
+    "build": "run-p build:server build:client",
+    "build:server": "babel src/server --out-dir build/server",
+    "build:client": "webpack --mode development",
     "start": "node build/index.js"
   },
   "dependencies": {
     "babel-cli": "^6.26.0",
+    "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.6.1",
-    "koa": "^2.5.0"
+    "koa": "^2.5.0",
+    "vue": "^2.5.16",
+    "vue-loader": "^14.2.1",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.12",
+    "yarn-run-all": "^3.1.1"
   }
 }
