@@ -1,7 +1,6 @@
-<template>
-	<div id="app">
-		<h1>My Todo App!</h1>
-	</div>
+<template lang="pug">
+	#app
+		h1 My Todo App!
 </template>
 
 <script>
